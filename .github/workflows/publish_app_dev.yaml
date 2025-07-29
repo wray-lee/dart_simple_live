@@ -12,7 +12,7 @@ jobs:
   # 打包Android、iOS、Mac
   build-mac-ios-android:
     runs-on: macos-latest
-
+    environment: mobile-keys
     permissions:
       contents: write
 

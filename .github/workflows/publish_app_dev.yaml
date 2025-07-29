@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - 'dev'
+permissions:
+  contents: read
 
 jobs:
   # 打包Android、iOS、Mac

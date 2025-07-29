@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
   push:
     branches:
-      - 'dev'
-permissions:
-  contents: read
+      - 'master'
+#permissions:
+#  contents: read
 
 jobs:
   # 打包Android、iOS、Mac

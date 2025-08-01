@@ -3,8 +3,6 @@ name: app-artifact-build-action
 on:
   workflow_dispatch:
   push:
-    branches:
-      - 'master'
     tags:
       - "t*"
 #permissions:

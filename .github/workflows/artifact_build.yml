@@ -54,6 +54,12 @@ jobs:
       # 打开MAC Desktop支持
       - name: Enable Flutter Desktop
         run: flutter config --enable-macos-desktop
+        
+      - name: Clean project
+        run: |
+          cd simple_live_app
+          flutter clean
+          rm -f pubspec.lock
 
       # 更新Flutter的packages
       - name: Restore packages
@@ -184,6 +190,12 @@ jobs:
       # 打开Linux Desktop支持
       - name: Enable Flutter Desktop
         run: flutter config --enable-linux-desktop
+        
+      - name: Clean project
+        run: |
+          cd simple_live_app
+          flutter clean
+          rm -f pubspec.lock
       # 更新Flutter的packages
       - name: Restore Packages
         run: |
@@ -227,6 +239,12 @@ jobs:
           cache: true
       - name: Enable Flutter Desktop
         run: flutter config --enable-windows-desktop
+
+      - name: Clean project
+        run: |
+          cd simple_live_app
+          flutter clean
+          rm -f pubspec.lock
       - name: Restore Packages
         run: |
           cd simple_live_app
